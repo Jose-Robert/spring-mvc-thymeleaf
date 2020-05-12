@@ -14,6 +14,10 @@ import lombok.*;
 public class Funcionario extends AbstractEntity<Long> {
 
 	private static final long serialVersionUID = 1L;
+	
+	@Id
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	private Long id;
 
 	@Column(nullable = false, unique = true)
 	private String nome;

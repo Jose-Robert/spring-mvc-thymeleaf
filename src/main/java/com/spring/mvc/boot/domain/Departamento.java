@@ -16,6 +16,10 @@ public class Departamento extends AbstractEntity<Long>{
 
 	private static final long serialVersionUID = 1L;
 	
+	@Id
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	private Long id;
+	
 	@Column(name = "nome", nullable = false, unique = true, length = 60)
 	private String nome;
 	
