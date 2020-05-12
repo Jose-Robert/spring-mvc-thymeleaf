@@ -1,4 +1,4 @@
-package com.spring.mvc.curso.boot.domain;
+package com.spring.mvc.boot.domain;
 
 import javax.persistence.*;
 

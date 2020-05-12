@@ -1,4 +1,4 @@
-package com.spring.mvc.curso.boot;
+package com.spring.mvc.boot;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

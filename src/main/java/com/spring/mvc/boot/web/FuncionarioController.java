@@ -1,20 +1,22 @@
-package com.spring.mvc.curso.boot.controller;
+package com.spring.mvc.boot.web;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-@RequestMapping("/cargos")
-public class CargoController {
+@RequestMapping("/funcionarios")
+public class FuncionarioController {
 	
 	@GetMapping("/cadastrar")
 	public String cadastrar() {
-		return "/cargo/cadastro";
+		return "/funcionario/cadastro";
 	}
 	
 	@GetMapping("/listar")
 	public String listar() {
-		return "/cargo/lista";
+		return "/funcionario/lista";
 	}
+
+
 }
