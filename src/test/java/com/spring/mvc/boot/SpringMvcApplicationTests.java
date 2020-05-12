@@ -1,4 +1,4 @@
-package com.spring.mvc.curso.boot;
+package com.spring.mvc.boot;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
