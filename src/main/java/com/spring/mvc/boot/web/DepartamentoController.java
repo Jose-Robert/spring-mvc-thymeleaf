@@ -46,4 +46,12 @@ public class DepartamentoController {
 		departamentoService.editar(departamento);
 		return "redirect:/departamentos/cadastrar";
 	}
+	
+	@GetMapping("/excluir/{id}")
+	public String excluir(@PathVariable("id") Long id, ModelMap model){
+		if(!departamentoService.departamentoTemCargos(id)) {
+			departamentoService.excluir(id);
+		}
+		return listar(model);
+	}
 }
